@@ -2,30 +2,48 @@
 
 ## Datos del Estudiante
 - **Nombre:** [Valeria Araceli Jimenez Placencia]
-- **Curso:** [Computacion ]
-- **Fecha:** [06/02/2026]
+- **Curso:** [Grupo - 6 - Computación ]
+- **Fecha:** [17/06/2026]
 
 ---
 
-## 1. [nodos de arboles]
-![Descripción de la captura](assets/02-captura-ejemplo.png)
+## 1. [Estructuras No Lineales: Pre-Order, In-Order, Pos-Order y Cálculo Altura del árbol]
+[Creamos un metodo de recorrido de arboles binarios, que ordenaran en inOrder, posOrder, preOrder, adicionamos tambien un metodo que calcula la altura de el arbol]
 
-**Fecha:**
+**Captura de codigo Pre-Order:**
 
-**Descripción:** [Explicar qué muestra esta captura o que desarrollo en clases]
+![alt text](image.png)
+
+**Captura de codigo In-Order:**
+
+![alt text](image-1.png)
+
+**Captura de codigo Pos-Order:**
+
+![alt text](image-2.png)
+
+**Captura de codigo por Niveles :**
+
+![alt text](image-3.png)
+
+**Captura de codigo por Altura :**
+![alt text](image-4.png)
+
+
+
 
 ---
 
-## 2. icc-est-u2-EstructurasNoLineales
+## 2. Calculo Peso De Arbol
 
-![Descripción de la captura](assets/02-captura-ejemplo-2.png)
-**Fecha:** 14/03/26
-**Descripción:** Cree el poryecto y subimos a GITHUB
+**Fecha:** [17/06/2026]
+**Descripción:** Calculamos el peso de un Arbol Binario con la clase BinaryTree creada en la carpeta Tree, ademas crramos una carpeta models con la clase Person incluida dentro de ella, ademas de un metoso runPersonTree() en el APP.
 
 ---
+**Captura de codigo Peso del Arbol :**
 
-## 3. icc-est-u4-EstructurasNoLineales
+![alt text](image-5.png)
 
-![Aplicación desplegada](assets/02-captura-demo.png)
-**Fecha:** 15/03/26
-**Descripción:** Ejemplos de bucles listados
+**Captura de codigo con el metodo compareTo() :**
+
+![alt text](image-6.png)

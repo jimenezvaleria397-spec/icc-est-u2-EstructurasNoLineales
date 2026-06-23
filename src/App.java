@@ -1,14 +1,21 @@
 import models.Person;
 import structures.trees.BinaryTree;
 import structures.trees.Ejercicio1;
+import structures.trees.Ejercicio2;
 import structures.trees.IntTree;
+import structures.node.*;
 
 
 public class App {
 
     public static void main(String[] args) throws Exception {
 
+        System.out.println("=========  =====int tree====");
         runIntTree();
+        System.out.println("========= ejercicio1 =========");
+        runEjercicio1();
+        System.out.println("========= ejercicio2 =========");
+        runEjercicio2();
     }
 
     private static void runIntTree() {
@@ -65,12 +72,28 @@ public class App {
         System.out.println();
         System.out.println();
         System.out.println("inOrder");
-        System.out.println(personTree.inOrder());
         
 
     }
     public static void runEjercicio1(){
-        Ejercicio1 ejercicio1 = new Ejercicio1();
+    Ejercicio1 ejercicio1 = new Ejercicio1();
+    int[] numeros = {5, 3, 7, 2, 4, 6, 8};
+    Node<Integer> root = ejercicio1.insert(numeros);
+    System.out.println("Árbol BST:");
+    ejercicio1.printTree(root);
     }
+    public static void runEjercicio2(){
+    Ejercicio1 ejercicio1 = new Ejercicio1();
+    Ejercicio2 ejercicio2 = new Ejercicio2();
+    int[] numeros = {5, 3, 7, 2, 4, 6, 8};
 
+    Node<Integer> root = ejercicio1.insert(numeros);
+
+    System.out.println("Árbol original:");
+    ejercicio1.printTree(root);
+    ejercicio2.invert(root);
+    System.out.println();
+    System.out.println("Árbol invertido:");
+    ejercicio1.printTree(root);
+    }
 }

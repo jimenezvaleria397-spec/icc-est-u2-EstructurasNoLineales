@@ -10,11 +10,11 @@ public class Person implements Comparable <Person> {
         this.age = age;
     }
 
-    public String getNombre() {
+    public String getName() {
         return name;
     }
 
-    public void setNombre(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -30,13 +30,14 @@ public class Person implements Comparable <Person> {
     public String toString() {
         return "Person [name=" + name + ", age=" + age + "]";
     }
+
     @Override
     public int compareTo(Person otra){
-        int comAge = Integer.compare(this.age, otra.getAge());
+        int compAge = Integer.compare(this.age, otra.getAge());
 
         if (compAge != 0)
             return compAge;
 
-        return this.name.compareTo(otra.getNombre());
+        return this.name.compareTo(otra.getName());
     }
 }

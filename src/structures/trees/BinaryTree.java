@@ -56,26 +56,22 @@ public class BinaryTree <T extends Comparable <T>> {
 
         return actual;
     }
-
+    //Metodo preOrder 
     public void preOrder() {
         preOrderRecursivo(root);
     }
-
     private void preOrderRecursivo(Node<T> actual) {
-
         if (actual == null)
             return;
 
         System.out.print(actual + " ");
-
         preOrderRecursivo(actual.getLeft());
         preOrderRecursivo(actual.getRight());
     }
-
+    //Metodo posOrder
     public void posOrder() {
         posOrderRecursivo(root);
     }
-
     private void posOrderRecursivo(Node<T> actual) {
 
         if (actual == null)
@@ -91,7 +87,6 @@ public class BinaryTree <T extends Comparable <T>> {
     public void inOrder() {
         inOrderRecursivo(root);
     }
-
     private void inOrderRecursivo(Node<T> actual) {
         if (actual == null)
             return;
@@ -137,11 +132,11 @@ public class BinaryTree <T extends Comparable <T>> {
             return alturaDerecha + 1;
         }
     }
+    
+    //Peso del arbol;
     public int peso(){
         return pesoRecursivo(root);
     }
-
-
     private int pesoRecursivo(Node<T> actual) {
         if (actual == null)
             return 0;
