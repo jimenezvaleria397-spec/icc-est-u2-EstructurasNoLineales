@@ -1,5 +1,6 @@
 import models.Person;
 import structures.trees.BinaryTree;
+import structures.trees.Ejercicio1;
 import structures.trees.IntTree;
 
 
@@ -65,6 +66,11 @@ public class App {
         System.out.println();
         System.out.println("inOrder");
         System.out.println(personTree.inOrder());
+        
 
     }
+    public static void runEjercicio1(){
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+    }
+
 }

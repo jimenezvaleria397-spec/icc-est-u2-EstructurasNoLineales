@@ -1,18 +1,31 @@
-## Getting Started
+# Práctica: [Estructuras no linesles]
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Datos del Estudiante
+- **Nombre:** [Valeria Araceli Jimenez Placencia]
+- **Curso:** [Computacion ]
+- **Fecha:** [06/02/2026]
 
-## Folder Structure REGISTRO DE 2 DIAS 
+---
 
-The workspace contains two folders by default, where:
+## 1. [nodos de arboles]
+![Descripción de la captura](assets/02-captura-ejemplo.png)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**Fecha:**
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+**Descripción:** [Explicar qué muestra esta captura o que desarrollo en clases]
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 2. icc-est-u2-EstructurasNoLineales
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![Descripción de la captura](assets/02-captura-ejemplo-2.png)
+**Fecha:** 14/03/26
+**Descripción:** Cree el poryecto y subimos a GITHUB
+
+---
+
+## 3. icc-est-u4-EstructurasNoLineales
+
+![Aplicación desplegada](assets/02-captura-demo.png)
+**Fecha:** 15/03/26
+**Descripción:** Ejemplos de bucles listados

@@ -2,7 +2,6 @@ package structures.trees;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Random;
 
 import structures.node.Node;
 
