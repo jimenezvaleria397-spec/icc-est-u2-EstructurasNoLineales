@@ -29,5 +29,5 @@ public class Ejercicio1 {
         printTreeRecursivo(actual.getLeft(), nivel + 1);
     }
 }
-        //Ejercicios no incluir en el readme 
+        //Ejercicios no incluir en el readme pero si en el informe 
         
