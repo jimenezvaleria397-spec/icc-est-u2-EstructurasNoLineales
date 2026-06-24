@@ -1,5 +1,8 @@
 import java.util.List;
+import java.util.Set;
 
+import collections.set.Sets;
+import models.Contacto;
 import models.Person;
 import structures.trees.BinaryTree;
 import structures.trees.IntTree;
@@ -14,18 +17,19 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         //llamo a los metodos para que impriman 
-        System.out.println("========= int tree ===========");
-        runIntTree();
-        System.out.println("========= Person Tree =========");
-        runPersonTree();
-        System.out.println("========= Ejercicio 1 =========");
-        runEjercicio1();
-        System.out.println("========= Ejercicio 2 =========");
-        runEjercicio2();
-        System.out.println("========= Ejercicio 3 ========");
-        runEjercicio3();
-        System.out.println("========= Ejercicio 4 =========");
-        runEjercicio4();
+       // System.out.println("========= int tree ===========");
+        //runIntTree();
+        //System.out.println("========= Person Tree =========");
+        //runPersonTree();
+        //System.out.println("========= Ejercicio 1 =========");
+        //runEjercicio1();
+        //System.out.println("========= Ejercicio 2 =========");
+        //runEjercicio2();
+        //System.out.println("========= Ejercicio 3 ========");
+        //runEjercicio3();
+        //System.out.println("========= Ejercicio 4 =========");
+        //runEjercicio4();
+        runSets();
     }
 
     private static void runIntTree() {
@@ -131,5 +135,43 @@ public class App {
     Node<Integer> root = ejercicio1.insert(numeros);
 
     System.out.println("Profundidad maxima del árbol: " + ejercicio4.maxDepth(root));
-}
+    }
+    public static void runSets(){
+        Sets sets = new Sets();
+
+        // Primera isntancia de hashSet
+        System.out.println("==== HashSet ====");
+        Set<String> hashSet = sets.construirHashSet();
+        System.out.println(hashSet);
+        System.out.println("Tamanio" + hashSet.size());
+        System.out.println(hashSet.contains("F"));
+
+        //segunda implementacion de LinkedHashSet
+        System.out.println("===== Linked Hash Set =====");
+        Set<String> lnSet = sets.construirLinkedHashSet();
+        System.out.println(lnSet);
+        System.out.println(lnSet.size());
+        System.out.println(lnSet.contains("B"));
+
+        //Implemetancion de TreeSet
+        System.out.println("===== TreeSet =====");
+        Set<String> tSet = sets.construirLinkedHashSet();
+        System.out.println(tSet);
+        System.out.println(tSet.size());
+        System.out.println(tSet.contains("B"));
+
+        //Implementacion Tree Set Contacto
+        System.out.println("===== TreeSet Contacto =====");
+        Set<Contacto> tCSet = sets.construirTeeSetConComparador();
+        System.out.println(tCSet);
+        System.out.println(tCSet.size());
+        System.out.println(tCSet.contains("B"));
+
+        //implementacio de construirHashSetContacto 
+        System.out.println("===== HashSet Contacto =====");
+        Set<Contacto> hCSet = sets.construirTeeSetConComparador();
+        System.out.println(hCSet);
+        System.out.println(hCSet.size());
+        System.out.println(hCSet.contains("B"));
+    }// porqure final int prime = 31; de esa linea y como funciona el equals;
 }
