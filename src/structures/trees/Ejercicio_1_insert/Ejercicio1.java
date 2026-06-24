@@ -16,7 +16,7 @@ public class Ejercicio1 {
         System.out.println("Imprimiendo el árbol:");
         printTreeRecursivo(root, 0);
     }
-
+    //condicionales que nos dice si el actual es null no retorna nada y si es diferente de null entra al for
     private void printTreeRecursivo(Node<Integer> actual, int nivel){
         if(actual == null){
             return;
