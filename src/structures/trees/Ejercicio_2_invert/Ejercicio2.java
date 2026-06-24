@@ -1,4 +1,4 @@
-package structures.trees;
+package structures.trees.Ejercicio_2_invert;
 import structures.node.*;
 
 public class Ejercicio2 {

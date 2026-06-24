@@ -1,5 +1,6 @@
-package structures.trees;
+package structures.trees.Ejercicio_1_insert;
 import structures.node.*;
+import structures.trees.BinaryTree;
 public class Ejercicio1 {
 
     public Node<Integer> insert(int[] numeros){

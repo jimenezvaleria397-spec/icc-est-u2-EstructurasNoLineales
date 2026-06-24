@@ -1,8 +1,8 @@
 import models.Person;
 import structures.trees.BinaryTree;
-import structures.trees.Ejercicio1;
-import structures.trees.Ejercicio2;
 import structures.trees.IntTree;
+import structures.trees.Ejercicio_1_insert.Ejercicio1;
+import structures.trees.Ejercicio_2_invert.Ejercicio2;
 import structures.node.*;
 
 
