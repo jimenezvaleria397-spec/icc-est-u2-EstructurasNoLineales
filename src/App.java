@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.Set;
 
+import collections.maps.Maps;
 import collections.set.Sets;
 import models.Contacto;
 import models.Person;
@@ -29,7 +30,8 @@ public class App {
         //runEjercicio3();
         //System.out.println("========= Ejercicio 4 =========");
         //runEjercicio4();
-        runSets();
+        //runSets();
+        runMaps();
     }
 
     private static void runIntTree() {
@@ -173,5 +175,13 @@ public class App {
         System.out.println(hCSet);
         System.out.println(hCSet.size());
         System.out.println(hCSet.contains("B"));
-    }// porqure final int prime = 31; de esa linea y como funciona el equals;
+    }
+
+    //DICCIONARIOS:
+    private static void runMaps(){
+        Maps map = new Maps();
+        map.construirHashMap();
+    }
+    //hacer push y readme 
+
 }
