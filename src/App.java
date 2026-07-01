@@ -11,6 +11,7 @@ import structures.trees.Ejercicio_1_insert.Ejercicio1;
 import structures.trees.Ejercicio_2_invert.Ejercicio2;
 import structures.trees.Ejercicio_3_listLevels.Ejercicio3;
 import structures.trees.Ejercicio_4_depth.Ejercicio4;
+import structures.graphs.Graph;
 import structures.node.*;
 
 
@@ -32,6 +33,7 @@ public class App {
         //runEjercicio4();
         //runSets();
         runMaps();
+        runGraphs();
     }
 
     private static void runIntTree() {
@@ -183,5 +185,27 @@ public class App {
         map.construirHashMap();
     }
     //hacer push y readme 
+    //run grafos
+    public static void runGraphs(){
+        Graph<String> g = new Graph<>();
+        g.add("A");
+        g.add("B");
+        g.add("C");
+        g.add("D");
+        g.add("J");
+
+        g.addEdge("J", "D");
+        g.addEdge("C", "D");
+
+        g.addEdgeUni("A", "B");
+        g.addEdgeUni("B", "C");
+        g.addEdgeUni("B", "D");
+        g.addEdgeUni("C", "A");
+        //=======IMPRESION=========
+        g.printGraph();
+        System.out.println();
+        System.out.println();
+        System.out.println("Grafos");
+    }
 
 }
