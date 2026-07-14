@@ -32,8 +32,8 @@ public class Graph <T> {
         Node<T> nv2 = new Node<T>(v2);
         graph.get(nv1).add(nv2);
     }
+    //entrySet devuelve cada clave y valor:
     public void printGraph(){
-
         for(Map.Entry<Node<T>, Set<Node<T>>> entry: graph.entrySet()){
             System.out.print(entry.getKey() + "->");
             for(Node<T> connection: entry.getValue()){
@@ -42,4 +42,10 @@ public class Graph <T> {
             System.out.println();
         }
     }
+    public Set<Node<T>> getVecinos(T current) {
+        return graph.getOrDefault(new Node<T> (current),new HashSet<Node<T>>());
+        
+        
+    }
+
 }

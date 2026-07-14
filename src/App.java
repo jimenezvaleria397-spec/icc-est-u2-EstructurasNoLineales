@@ -12,6 +12,8 @@ import structures.trees.Ejercicio_2_invert.Ejercicio2;
 import structures.trees.Ejercicio_3_listLevels.Ejercicio3;
 import structures.trees.Ejercicio_4_depth.Ejercicio4;
 import structures.graphs.Graph;
+import structures.graphs.PathResult;
+import structures.graphs.implementations.DFSPathFinder;
 import structures.node.*;
 
 
@@ -32,8 +34,9 @@ public class App {
         //System.out.println("========= Ejercicio 4 =========");
         //runEjercicio4();
         //runSets();
-        runMaps();
-        runGraphs();
+        //runMaps();
+        //runGraphs();
+        runGraphs2();
     }
 
     private static void runIntTree() {
@@ -196,6 +199,7 @@ public class App {
 
         g.addEdge("J", "D");
         g.addEdge("C", "D");
+        
 
         g.addEdgeUni("A", "B");
         g.addEdgeUni("B", "C");
@@ -206,6 +210,22 @@ public class App {
         System.out.println();
         System.out.println();
         System.out.println("Grafos");
+    }
+    public static void runGraphs2(){
+
+        Graph<String> g = new Graph<>();
+        g.addEdge("A", "B");
+        g.addEdge("A", "C");
+        g.addEdge("B", "D");
+        g.addEdge("C", "J");
+        g.addEdge("D", "E");
+        g.addEdge("E", "F");
+        g.addEdge("K", "J");
+
+        DFSPathFinder<String> dfs = new DFSPathFinder<String>();
+        PathResult<String> result = dfs.find(g, "A", "F");
+        PathResult<String> result2 = dfs.find(g, "A", "J");
+        PathResult<String> result3 = dfs.find(g, "A", "K");
     }
 
 }
